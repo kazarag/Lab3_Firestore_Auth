@@ -11,7 +11,7 @@ const AppointmentDetail = ({navigation}) => {
   const {userLogin} = controller;
   const route = useRoute();
   const {id} = route.params;
-  const APPOIMENTS = firestore().collection('APPOIMENTS');
+  const APPOIMENTS = firestore().collection('APPOINTMENTS');
   const [datetime, setDatetime] = useState(new Date());
   const [isAdmin, setIsAdmin] = useState(false);
   const [open, setOpen] = useState(false);
